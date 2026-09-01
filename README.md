@@ -23,7 +23,7 @@ As you can see inside each folder, there are ***different subfolders*** containi
 
 ## Features (Final Version) ⚙
 
-### App #1️⃣ (Order Status System）
+### App #1️⃣ (Order Status System)
 
 1. **Draw** the queued and serving orders on **VGA pixel buffer**.
 2. **Add, remove** and **clear orders** using buttons ```(KEY0 ~ KEY3)```.
@@ -31,7 +31,7 @@ As you can see inside each folder, there are ***different subfolders*** containi
 4. **Enhance** the **text alignments** and **visual effects**.
 
 
-### App #2️⃣ (Snake Game）
+### App #2️⃣ (Snake Game)
 
 1. **Draw** the snake game, title, and live score on **VGA pixel buffer**.
 2. **Turn the direction, pause** and **clear timer** using buttons ```(KEY0 ~ KEY3)```.
@@ -59,7 +59,7 @@ Although you have to download the source code locally on your device, you don't 
 
 Since the `main` branch acts like a bundle that contains all source codes based on other branches. I will **leave the "stories"** for each application **under its related branch** for those who wants to know more about how I come up ideas to write applications for microcomputers.
 
-## Screenshots 📸
+## Screenshots (Final Version) 📸
 
 <img src="Assets/screenshot1.png" width="330" /> <img src="Assets/screenshot2.png" width="330" />
 
