@@ -1,32 +1,29 @@
-# Apps for ARMv7 DE1-SoC Board #2️⃣ (Snake Game)
+# Apps for ARMv7 DE1-SoC Board #3️⃣ (Timer)
 
 ## Descriptions 📋
 
-This is a **Snake game** that was written in both **Assembly** and **C** that is *technically* runnable on a DE1-SoC Kit which has **ARM Cortex-A9** processor integrated.
+This is a **timer** application including **lap mode** that was written in both **Assembly** and **C**, which is *technically* runnable on a DE1-SoC Kit that has **ARM Cortex-A9** processor integrated.
 
 As you can see in this `branch`, there are ***different folders*** containing ***different kinds of source codes*** that are named as *"Version 1.0"*, *"Version 2.0"*, etc. This shows how I built this app following the **MVP (Minimum Viable Product)** strategy towards the final version, which means *all the early versions are also runnable*, but the **new functionalities** are added partially in the next version based on **testing** and **refining**.
-
-###### Let's see what is the highest score you can achieve in my snake game (for the final version)? 😁
 
 ## Features ⚙
 
 ### Version 1.0 (What the app does?)
 
-1. **Design** the basic **logic** of snake game for ARMv7 DE1-SoC board.
-2. **Assign buttons** ```(KEY0 ~ KEY3)``` to **manipulate** snake's direction.
-3. **Implement situation** when game is over.
+1. **Start** ```(KEY0)```, **pause** ```(KEY1)```, **record the lap** ```(KEY2)```, and **reset** ```(KEY3)``` the timer.
+2. **Map** the timer's **numbers** on the seven-segment displays.
+3. Able to **show the last recorded lap** ```(SW0)``` on the seven-segment displays rather than timer.
+
 
 ### Version 2.0 (What was added from Version 1.0?)
 
-1. **Design** a more reasonable snake **turning logic**. (Only need to press ```KEY0``` and ```KEY1``` for turning.)
-2. **Add wall frames** to restrict snake's moving area. **Display title** and **live scores** while playing.
-3. **Implement** the game **pause** ```(KEY2)``` and **restart** ```(KEY3)``` functionalities.
-4. Able to **close the game** ```(SW0)``` if you don't want to play. Automatically clear the previous game round after turning off.
+1. **Draw** the timer's and lap mode's **text** on **VGA pixel buffer**.
+2. **Align** the texts **to the centre**, and **draw borders** to split the area of displaying timer and lap.
+3. **Hide** the **lap history** if the switch ```(SW0)``` is off.
 
 ### Version 3.0 (What was added from Version 2.0?)
 
-1. **Fix screen blinking issues** during gaming.
-2. **Fix slow speed issues** for Assembly code.
+1. **Enhance the visual effects** to be more colourful.
 
 ## Installation 📥
 
@@ -38,18 +35,14 @@ Although you have to download the source code locally on your device, you don't 
 
 ## Stories Behind the Work 📠
 
-After building the final version of Order Status System for ARMv7 DE1-SoC environment (See more information in `oss` branch.), I started to **search for more information** about ARM Cortex-A9 processor and DE1-SoC Kit, see if I can **design** and **build another "powerful" application** under this environment. 
+The earlier version ```(Version 1.0)``` of the timer app was **originally written** for one of the assignments of my university course —— ***Microprocessors and Microcomputers***.
 
-As **most of us likes gaming** ```(And decided to study software in the university because of this...)```, the idea of making a simple game for ARMv7 DE1-SoC environment comes out. 
+The original assignment asked to implement visual outputs **only on** seven-segment displays. As I **searched more information** about ARM Cortex-A9 processor and DE1-SoC Kit, I think the earlier version is kind of simple and crude, and I can *definitely* design and **build a much more powerful version**...
 
-Since I don't own a physical microcomputer, and I can only use the peripherals available on the [CPUlator](https://cpulator.01xz.net/?sys=arm-de1soc), **snake game** could possibly be the easiest game to implement on the DE1-SoC Kit in my opinion.
-
-###### And this is probably the hardest Assembly/C coding for microcomputer I have made so far...
+The ***most complex part*** that I've further developed ```(If you are curious about it...)``` is figuring out **how to switch the text outputs** for the lap mode based on status of the switch ```(SW0)``` because there are 2 different outputs for the lap mode, and the new texts cannot fully cover the old texts when I toggle the switch. **The solution** is to ***clear the pixels only on that specific line of texts*** instead of clearing the entire buffer, which would cause lags when refreshing.
 
 ## Screenshots (Final Version) 📸
 
-<img src="Assets/screenshot2a.png" width="480" />
+<img src="Assets/screenshot3a.png" width="480" />
 
-<img src="Assets/screenshot2b.png" width="480" />
-
-<img src="Assets/screenshot2c.png" width="480" />
+<img src="Assets/screenshot3b.png" width="480" />
