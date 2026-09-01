@@ -61,8 +61,8 @@ Since the `main` branch acts like a bundle that contains all source codes based 
 
 ## Screenshots 📸
 
-<img src="Assets/screenshot1.png" width="360" /> <img src="Assets/screenshot2.png" width="360" />
+<img src="Assets/screenshot1.png" width="330" /> <img src="Assets/screenshot2.png" width="330" />
 
-<img src="Assets/screenshot3.png" width="360" /> <img src="Assets/screenshot4.png" width="360" />
+<img src="Assets/screenshot3.png" width="330" /> <img src="Assets/screenshot4.png" width="330" />
 
-<img src="Assets/screenshot5.png" width="360" /> <img src="Assets/screenshot6.png" width="360" />
+<img src="Assets/screenshot5.png" width="330" /> <img src="Assets/screenshot6.png" width="330" />
