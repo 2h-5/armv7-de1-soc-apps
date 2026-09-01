@@ -36,7 +36,7 @@ The earlier version ```(Version 1.0)``` of this OSS app was **originally written
 
 However, I think the original version is kind of simple and crude. So, I added more visual effects and user interactions for the final version ```(Version 2.0)```.
 
-## Screenshots 📸
+## Screenshots (Final Version) 📸
 
 <img src="Assets/screenshot1a.png" width="480" />
 
