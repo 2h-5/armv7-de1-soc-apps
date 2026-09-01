@@ -39,7 +39,7 @@ The earlier version ```(Version 1.0)``` of the timer app was **originally writte
 
 The original assignment asked to implement visual outputs **only on** seven-segment displays. As I **searched more information** about ARM Cortex-A9 processor and DE1-SoC Kit, I think the earlier version is kind of simple and crude, and I can *definitely* design and **build a much more powerful version**...
 
-The ***most complex part*** that I've further developed ```(If you are curious about it...)``` is figuring out **how to switch the text outputs** for the lap mode based on status of the switch ```(SW0)``` because there are 2 different outputs for the lap mode, and the new texts cannot fully cover the old texts when I toggle the switch. **The solution** is to ***clear the pixels only on that specific line of texts*** instead of clearing the entire buffer, which would cause lags when refreshing.
+The ***most complex part*** that I've further developed ```(If you are curious about it...)``` is figuring out **how to switch the text outputs** for the lap mode based on status of the switch ```(SW0)``` because there are 2 different lines of text for the lap mode, and the new text cannot fully cover the old one when I toggle the switch. **The solution** is to ***clear the pixels only on that specific line of texts*** instead of clearing the entire buffer, which would cause lags when refreshing.
 
 ## Screenshots (Final Version) 📸
 
