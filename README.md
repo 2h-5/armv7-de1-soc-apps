@@ -31,7 +31,7 @@ As you can see in this `branch`, there are ***different folders*** containing **
 
 Although you have to download the source code locally on your device, you don't have to download any simulator locally to test the code. Instead, we will be using [CPUlator](https://cpulator.01xz.net/?sys=arm-de1soc) to simulate the ARMv7 DE1-SoC environment.
 
-###### For the operation of this game, I have actually mentioned how to play it in the `Features` section, can you figure it out yourself?
+###### For the operation of this app, I have actually mentioned how to play it in the `Features` section, can you figure it out yourself?
 
 ## Stories Behind the Work 📠
 
